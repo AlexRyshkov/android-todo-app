@@ -19,7 +19,6 @@ class TodoAdapter(private val dataSet: List<Todo>) :
         }
     }
 
-    // Create new views (invoked by the layout manager)
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(viewGroup.context)
             .inflate(R.layout.todo_list_item, viewGroup, false)
@@ -27,13 +26,11 @@ class TodoAdapter(private val dataSet: List<Todo>) :
         return ViewHolder(view)
     }
 
-    // Replace the contents of a view (invoked by the layout manager)
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
         val todo = dataSet[position]
         viewHolder.textViewName.text = todo.name;
     }
 
-    // Return the size of your dataset (invoked by the layout manager)
     override fun getItemCount() = dataSet.size
 
 }
