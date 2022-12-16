@@ -1,4 +1,4 @@
-package com.example.todoapp
+package com.example.todoapp.todoList
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,9 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.fragment.navArgs
+import com.example.todoapp.R
+import com.example.todoapp.data.Datasource
 import com.example.todoapp.databinding.TodoListFragmentBinding
-import com.google.android.material.snackbar.Snackbar
 
 class TodoListFragment : Fragment() {
 

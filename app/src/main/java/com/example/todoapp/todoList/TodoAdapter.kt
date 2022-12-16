@@ -1,10 +1,12 @@
-package com.example.todoapp
+package com.example.todoapp.todoList
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.todoapp.R
+import com.example.todoapp.data.Todo
 
 class TodoAdapter(private val dataSet: List<Todo>) :
     RecyclerView.Adapter<TodoAdapter.ViewHolder>() {
