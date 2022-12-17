@@ -7,7 +7,7 @@
     <fragment
         android:id="@+id/todoListFragment"
         android:name="com.example.todoapp.todoList.TodoListFragment"
-        android:label="Todos"
+        android:label="@string/label_todos"
         tools:layout="@layout/todo_list_fragment">
         <action
             android:id="@+id/action_todoListFragment_to_addTodoFragment"
@@ -19,7 +19,7 @@
     <fragment
         android:id="@+id/addTodoFragment"
         android:name="com.example.todoapp.addTodo.AddTodoFragment"
-        android:label="Add todo"
+        android:label="@string/label_add_todo"
         tools:layout="@layout/add_todo_fragment">
         <action
             android:id="@+id/action_addTodoFragment_to_todoListFragment"
